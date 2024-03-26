@@ -1,25 +1,22 @@
 # Random Walk Program
 
 ## Introduction
-The Random Walk Program is a simple yet fascinating project developed in C99. It was created as a learning exercise to understand and implement core programming concepts such as multi-dimensional arrays, random number generation, control flow with loops and conditionals, and the execution of a simple algorithm. This program serves as an educational tool for those interested in exploring the basics of programming in C and algorithmic thinking.
+The Random Walk Program is an intriguing project built in C99, showcasing the implementation and understanding of fundamental programming concepts through a simple, visual algorithm. Developed as a hands-on exercise, this program brings to life the concepts of multi-dimensional arrays, random number generation, and control flow mechanisms like loops and conditionals.
 
-## Features
-- **Multi-Dimensional Arrays**: Demonstrates the use of arrays within arrays to simulate a grid.
-- **Random Number Generation**: Utilizes C's random number generation capabilities to dictate movement within the grid.
-- **Control Flow**: Implements loops and conditional statements to navigate through the grid and make decisions.
-- **Simple Algorithm Implementation**: Follows a straightforward algorithm to simulate the random walk process.
+## Program Overview
+At its core, the Random Walk Program creates a visual representation of a random walk within a 10x10 grid. Starting from a random position, the program places alphabetical characters ('A' to 'Z') to mark the path taken by the walk. Each step moves to an adjacent, unvisited cell in a random direction (up, down, left, or right), illustrating a fascinating pattern of randomness.
 
-## How It Works
-The Random Walk Program simulates a random walk on a grid. A point starts at the center (or a random starting point) of the grid and moves in a random direction (up, down, left, or right) at each step. The program tracks the path taken and displays the grid with the path marked, showcasing how random movement creates patterns over time.
+## Key Features
+- **Dynamic Grid Initialization**: Prepares a 10x10 grid, filling it with dots (`.`) to represent unvisited cells.
+- **Random Start**: Chooses a random starting location within the grid to begin the walk.
+- **Directional Movement**: Randomly selects a viable direction to move in, avoiding cells that have already been visited.
+- **Character Placement**: Marks each visited cell with sequential letters from 'A' to 'Z', visualizing the path of the walk.
+- **Boundary Checking**: Ensures movements are contained within the grid and avoids revisiting cells.
+- **Path Termination**: Stops the walk if no unvisited adjacent cells are available.
 
-## Getting Started
+## Compilation and Execution
+This program is written in C99 and can be compiled with any standard C compiler, such as GCC. Here's how to compile and run the program:
 
-### Prerequisites
-- A C compiler that supports C99 (GCC recommended)
-- Basic knowledge of compiling C programs from the command line
-
-### Compiling the Program
-To compile the Random Walk Program, navigate to the directory containing the program files and use the following command:
-
+### Compiling
 ```bash
 gcc -std=c99 -o random_walk random_walk.c
